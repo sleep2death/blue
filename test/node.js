@@ -72,4 +72,40 @@ describe('Node', function () {
       assert.strictEqual(0, root.children.length)
     })
   })
+  describe('#set Node index', function () {
+    it('set child index', function () {
+      var root = new Node()
+      var child1 = new Node()
+      var child2 = new Node()
+      var child3 = new Node()
+
+      root.addChild(child1)
+      root.addChild(child2)
+      root.addChild(child3)
+
+      root.setChildIndex(child1, 1)
+      assert.strictEqual(child1, root.children[1])
+      root.setChildIndex(child1, 2)
+      assert.strictEqual(child1, root.children[2])
+      assert.strictEqual(child3, root.children[1])
+    })
+  })
+  describe('#destroy', function () {
+    it('destroy a root with children', function () {
+      var root = new Node()
+      var child1 = new Node()
+      var child2 = new Node()
+      var child3 = new Node()
+
+      root.addChild(child1)
+      root.addChild(child2)
+      root.addChild(child3)
+
+      root.setChildIndex(child1, 1)
+      assert.strictEqual(child1, root.children[1])
+      root.setChildIndex(child1, 2)
+      assert.strictEqual(child1, root.children[2])
+      assert.strictEqual(child3, root.children[1])
+    })
+  })
 })

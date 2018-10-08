@@ -10,6 +10,6 @@
   }
 </script>
 
-<style>
-  /* CSS */
+<style lang="sass">
+  @import "~bulma/bulma.sass"
 </style>
