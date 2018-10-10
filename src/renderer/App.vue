@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-view/>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'blue'
-  }
+export default {
+  name: 'Blue'
+}
 </script>
 
 <style lang="sass">
   @import "~bulma/bulma.sass"
+  @import "~@fortawesome/fontawesome-free/css/all.css"
 </style>
