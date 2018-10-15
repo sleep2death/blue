@@ -12,5 +12,5 @@ export default {
 
 <style lang="sass">
   @import "~bulma/bulma.sass"
-  @import "~@fortawesome/fontawesome-free/css/all.css"
+  @import "~line-awesome/css/line-awesome.min.css"
 </style>

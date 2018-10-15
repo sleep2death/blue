@@ -1,0 +1,7 @@
+{
+  "name": "OnPlayerEnter",
+  "type": "event",
+  "exec-next": [],
+  "in": [],
+  "out": []
+}
